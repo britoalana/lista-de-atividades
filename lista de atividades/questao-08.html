@@ -1,0 +1,30 @@
+<!-- Faça um algoritmo para calcular o fatorial de um número. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numero
+        let fatorial = 1
+        let numeroAtual = 1
+
+
+        numero = parseInt(prompt("Digite um número "))
+
+        while (numeroAtual <= numero) {
+            fatorial = fatorial * numeroAtual
+            numeroAtual = numeroAtual + 1
+        }
+        console.log(`O fatorial do número ${numero} é ${fatorial}`)
+    </script>
+</body>
+
+</html>

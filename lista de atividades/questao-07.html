@@ -1,0 +1,30 @@
+<!-- Crie uma programa que solicita ao usuário 10 números,
+ através de uma estrutura de repetição, e mostre o maior número digitado pelo usuário. -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ </head>
+ <body>
+    <script>
+
+      //não funcionou
+      let numero, maior
+
+
+      for(i=1; i<10; i++){
+         numero = parseInt(prompt("Digite um número"))
+
+         if(numero>maior){
+         maior = numero
+         }
+         console.log(`O maior número digitado é: ${maior}`)
+      }
+    </script>
+ </body>
+ </html>

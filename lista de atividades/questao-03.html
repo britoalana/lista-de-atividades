@@ -1,0 +1,28 @@
+<!-- 03) Uma empresa decide dar um aumento de 30% aos funcionários com salários inferiores a R$ 500,00. 
+Faça um programa que receba o salário do funcionário e mostre 
+o valor do salário reajustado ou uma mensagem, caso não ele não tenha direito ao aumento. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salarioReajustado
+        let funcionario = prompt("Nome do funcinário")
+        let salario =parseFloat(prompt("Digite o valor do salário"))
+
+        salarioReajustado =(salario*0.3) + salario
+
+        if(salario>500){
+          console.log ("Você não tem direito ao reajuste")
+        } else{
+            console.log(`O novo salário é ${salarioReajustado}`)
+        }
+
+    </script>
+</body>
+</html>

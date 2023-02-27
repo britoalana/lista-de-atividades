@@ -1,0 +1,39 @@
+<!-- Crie um programa que pergunte ao usuário quantos alunos tem em sala. 
+    Em seguida, através de uma estrutura de repetição, pede ao usuário que entre com a média de todos 
+    os alunos em sala, um por vez. Por fim, o programa deve mostrar a média aritmética da turma.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+
+
+
+      let contador = 1
+      let total, media, soma =0, mediaAluno
+
+
+      total = parseInt(prompt("Número de alunos"))
+
+      while(contador <= total){
+        mediaAluno = parseFloat(prompt(`Digite a média do ${contador} aluno `))
+        
+       
+        soma += mediaAluno 
+        contador++
+      }
+
+      media = soma / total
+      console.log(`A média da turma é ${media}`)
+
+        
+    </script>
+ </body>
+ </html>
